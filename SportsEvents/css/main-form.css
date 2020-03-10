@@ -1,0 +1,39 @@
+.main-form {
+	width: 100%;
+	position: relative;
+}
+
+.main-form tbody {
+	width: 100%;
+}
+
+.main-form tr {
+	width: 100%;
+}
+
+.main-form tr td:nth-of-type(odd) {
+	width: 50%;
+	text-align: right;
+	left: 0;
+	padding-right: 7px;
+}
+
+.main-form tr td:nth-of-type(even) {
+	width: 50%;
+	text-align: left;
+	right: 0;
+	padding-left: 7px;
+}
+
+.main-form tr td input, .main-form tr td select {
+	height: 32px;
+	width: 300px;
+	font-family: Circular, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 4px;
+}
+
+.main-form tr td select option {
+	font-family: Circular, Helvetica, sans-serif;
+	font-size: 16px;
+}

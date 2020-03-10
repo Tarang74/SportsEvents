@@ -1,0 +1,114 @@
+.footer {
+	color: white;
+	bottom: 0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	margin: 0 auto;
+	z-index: 7;
+	padding: 5% 15%;
+	background-color: #0a0a0a;
+	display: block;
+}
+
+.footer a {
+	font-size: 18px;
+}
+
+.footer .heading {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.footer section {
+	z-index: 9;
+	display: inline-block;
+	margin: 0;
+}
+
+.footer section ul {
+	padding: 0 5%;
+}
+
+.footer section li {
+	margin: 5px 0;
+}
+
+/* Left */
+
+.footer section:nth-of-type(1) {
+	float: left;
+	position: relative;
+	text-align: right;
+	width: 50%;
+}
+
+.footer section:nth-of-type(1) ul {
+	position: relative;
+	float: right;
+	text-align: right;
+	margin: auto 0;
+}
+
+.footer section:nth-of-type(1) li {
+	text-align: right;
+	display: block;
+	position: relative;
+}
+
+/* Center */
+
+.footer section:nth-of-type(2) {
+	float: center;
+	position: relative;
+	text-align: center;
+	width: 25%;
+}
+
+.footer section:nth-of-type(2) ul {
+	position: relative;
+	float: center;
+	text-align: right;
+	margin: 0;
+}
+
+.footer section:nth-of-type(2) li {
+	align-content: right;
+	position: relative;
+	display: block;
+}
+
+.footer section:nth-of-type(2) li a {
+	text-align: right;
+}
+
+/* Right */
+
+.footer section:nth-of-type(3) {
+	float: right;
+	position: relative;
+	text-align: center;
+	width: 25%;
+}
+
+.footer section:nth-of-type(3) ul {
+	position: relative;
+	margin: auto 0;
+}
+
+.footer section:nth-of-type(3) li {
+	width: 100%;
+	text-align: left;
+	display: block;
+	position: relative;
+}
+
+/* Social */
+
+.socialfb:hover {
+	color: #4267b2;
+}
+
+.socialin:hover {
+	color: #d62976;
+}

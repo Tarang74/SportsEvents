@@ -1,0 +1,229 @@
+@import url("svg.css");
+* {
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	font: 400 .8em "Open Sans", sans-serif;
+	font-size: .8em !important;
+	background-color: none;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-shadow: 0;
+	letter-spacing: normal !important;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	display: block;
+	color: -internal-root-color;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	background-color: #EFEFEF !important;
+	font-family: "Open Sans", arial, sans-serif;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	line-height: 20px;
+	text-align: center;
+	scroll-behavior: smooth;
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+main {
+	margin-top: 105px;
+	padding: 0 5em;
+}
+
+.section {
+	padding: 3em;
+	margin: 3em 0;
+	background-color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.main-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.main-table th {
+	cursor: pointer;
+	background-color: rgba(27, 118, 213, 0.90);
+	color: white;
+}
+
+.main-table tbody tr:nth-child(odd) {
+	background-color: rgba(200, 200, 200, 1.00);
+}
+
+.main-table tbody tr:nth-child(even) {
+	background-color: rgba(245, 245, 245, 1.00);
+}
+
+.main-table td {
+	display: table-cell;
+}
+
+.main-table thead tr th {
+	text-transform: uppercase;
+}
+
+.availablecontainer {
+	position: relative;
+	width: 100%;
+	display: inline-flex;
+}
+
+.availabletext {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	left: 0;
+}
+
+.available-label {
+	position: relative;
+}
+
+.available-label svg {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.availablesvg {
+	right: 0;
+	width: 30%;
+	position: relative;
+}
+
+.availablesvg svg {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.completecontainer {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+}
+
+.completetext {
+	display: flex;
+	text-align: center;
+	left: 0;
+	width: 50%;
+}
+
+.cancelbutton {
+	width: 50%;
+	right: 0;
+}
+
+.complete-input {
+	background-color: rgba(0, 0, 0, 0.00);
+	border: none;
+	color: #5C5C5C;
+}
+
+input[type=submit] {
+	background-color: none;
+}
+
+@media (max-width: 550px) {
+	.available-label svg, .availablesvg svg {
+		height: 28px;
+	}
+	.main-table td {
+		padding: 12px 0;
+		font-size: 12px;
+	}
+	.main-table th {
+		padding: 14px 0;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 550px) and ( max-width: 768px) {
+	.available-label svg, .availablesvg svg {
+		height: 32px;
+	}
+	.main-table td {
+		padding: 12px;
+		font-size: 12px;
+	}
+	.main-table th {
+		padding: 14px 0;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.available-label svg, .availablesvg svg {
+		height: 36px;
+	}
+	.main-table td {
+		padding: 14px 0;
+		font-size: 14px;
+	}
+	.main-table th {
+		padding: 16px 0;
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+	.available-label svg, .availablesvg svg {
+		height: 38px;
+	}
+	.main-table td {
+		padding: 16px 0;
+		font-size: 16px;
+	}
+	.main-table th {
+		padding: 18px 0;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.available-label svg, .availablesvg svg {
+		height: 42px;
+	}
+	.main-table td {
+		padding: 20px 0;
+		font-size: 24px;
+	}
+	.main-table th {
+		padding: 22px 0;
+		font-size: 26px;
+	}
+}

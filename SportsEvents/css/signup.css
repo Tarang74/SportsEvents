@@ -1,0 +1,473 @@
+* {
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/circular-black.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: italic;
+	font-weight: 900;
+	src: url(../fonts/circular-blackitalic.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/circular-bold.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: italic;
+	font-weight: 700;
+	src: url(../fonts/circular-bolditalic.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/circular-book.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/circular-bookitalic.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/circular-medium.ttf) format("truetype"),
+}
+
+@font-face {
+	font-family: Circular;
+	font-style: italic;
+	font-weight: 500;
+	src: url(../fonts/circular-mediumitalic.ttf) format("truetype")
+}
+
+html {
+	font: 400 .8em "Open Sans", sans-serif;
+	font-size: .8em !important;
+	background-color: #EFEFEF;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-shadow: 0;
+	letter-spacing: normal !important;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	display: block;
+	color: -internal-root-color;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0) !important;
+	font-family: "Open Sans", arial, sans-serif;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	line-height: 20px;
+	text-align: center;
+	scroll-behavior: smooth;
+	display: block;
+	overflow-y: auto;
+}
+
+main {
+	position: relative;
+	margin: 0;
+	height: auto;
+}
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Circular, Helvetica, "sans-serif";
+}
+
+h1 {
+	letter-spacing: 2px;
+	font-size: 300%;
+	display: block;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	pointer-events: none;
+	user-select: none;
+}
+
+ul {
+	display: block;
+	width: 100%;
+}
+
+li {
+	display: inline;
+	margin: 0 0 8px 0;
+}
+
+.help-block {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #FF1519;
+	position: relative;
+}
+
+.login-container {
+	background-image: url(https://cdn.hipwallpaper.com/i/88/10/D82F3E.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.login-panel {
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 50px;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	display: block;
+}
+
+.clearfix {
+	width: 100%;
+	position: relative;
+	display: block;
+}
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.clearfix, .clearfixParent>div, .clearfixParent>li {
+	display: block;
+	position: relative;
+}
+
+#login-form-text {
+	position: relative;
+}
+
+#loginFormFields {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#firstname, #lastname {
+	text-transform: capitalize;
+}
+
+label {
+	cursor: default;
+	display: none;
+}
+
+input {
+	position: relative;
+	width: 100%;
+	padding: .8em 1em;
+	border: 0;
+	background-color: #eceff1;
+	color: #5f6368;
+	font: 400 13.3333px Arial;
+	font-size: 1.5em;
+	box-sizing: border-box !important;
+	transition: background-color .25s ease-out;
+	border-radius: 3px;
+	box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.14), 0 3px 1px -2px rgba(33, 33, 33, 0.2), 0 1px 5px 0 rgba(33, 33, 33, 0.12);
+}
+
+input:required:invalid {
+	borer-color: red;
+	border-width: thick;
+}
+
+input:focus {
+	background-color: white;
+}
+
+input:focus::placeholder, input:hover::placeholder {
+	color: rgba(0, 0, 0, .7);
+}
+
+input::placeholder {
+	letter-spacing: 1px;
+	font-style: italic;
+	color: rgba(56, 56, 56, .5);
+	transition: color 0.5s ease-out;
+	font-weight: lighter;
+}
+
+input[type="submit"] {
+	background: none !important;
+	background-color: hsla(200, 100%, 50%, 1.00) !important;
+	color: rgba(235, 235, 235, 0.90);
+	transition: background-color 0.5s ease-out;
+	text-shadow: none;
+	cursor: pointer;
+	font-family: "Open Sans", arial, sans-serif;
+	border-radius: 5px;
+	padding-left: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.35);
+	width: 100%;
+	display: block;
+	transform: perspective(0px) translateZ(1);
+	position: relative;
+}
+
+input[type="submit"]:hover {
+	background-color: hsla(200, 100%, 45%, 1.00) !important;
+	color: #FFFFFF;
+}
+
+li.clearfix:nth-of-type(3) {
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0);
+}
+
+li select:nth-of-type(1) {
+	float: left;
+}
+
+li select:nth-of-type(2) {
+	float: right;
+}
+
+/*.hover:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	height: 5px;
+	z-index: 1;
+	transform: translateY(5px);
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.hover:hover:before, .hover:focus:before, .hover:active:before {
+	transform: translateY(0px);
+}*/
+
+input, button, select {
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: middle;
+}
+
+@media (max-width: 550px) {
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.login-panel {
+		width: 20em;
+	}
+	input {
+		height: 50px;
+		width: 100%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select {
+		height: 50px;
+		width: 49%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select option {
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 550px) and ( max-width: 768px) {
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.login-panel {
+		width: 35em;
+	}
+	input {
+		font-size: 25px;
+	}
+	input {
+		height: 50px;
+		width: 100%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select {
+		height: 50px;
+		width: 49%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select option {
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.login-panel {
+		width: 35em;
+	}
+	input {
+		height: 50px;
+		width: 100%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select {
+		height: 50px;
+		width: 49%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select option {
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.login-panel {
+		width: 30em;
+	}
+	input {
+		height: 50px;
+		width: 100%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select {
+		height: 50px;
+		width: 49%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select option {
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.login-panel {
+		width: 40em;
+	}
+	input {
+		height: 50px;
+		width: 100%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select {
+		height: 50px;
+		width: 49%;
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+	}
+	select option {
+		font-family: Circular, Helvetica, sans-serif;
+		font-size: 20px;
+	}
+}
